@@ -1,0 +1,9 @@
+{
+    "muscle_group": "hamstrings",
+    "exercises": {
+      "warmup": ["Dynamisk tøying", "Lett jogging"],
+      "mobility": ["Leg swings", "Standing forward fold"],
+      "strength": ["Hamstring curls", "Stiff-legged deadlift"]
+    }
+  }
+  
