@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Muscle Guide</title>
+</head>
+<body>
+    <h1>Velg muskelgrupper</h1>
+    <form id="muscleForm">
+        <label><input type="checkbox" name="muscle" value="hamstrings"> Hamstrings</label><br>
+        <label><input type="checkbox" name="muscle" value="lower_back"> Lower Back</label><br>
+        <label><input type="checkbox" name="muscle" value="quadriceps"> Quadriceps</label><br>
+        <button type="button" onclick="fetchExercises()">Hent øvelser</button>
+    </form>
+
+    <h2>Øvelsesforslag:</h2>
+    <div id="results"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

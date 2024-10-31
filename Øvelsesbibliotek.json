@@ -1,9 +1,17 @@
 {
-    "muscle_group": "hamstrings",
-    "exercises": {
+  "hamstrings": {
       "warmup": ["Dynamisk tøying", "Lett jogging"],
       "mobility": ["Leg swings", "Standing forward fold"],
       "strength": ["Hamstring curls", "Stiff-legged deadlift"]
-    }
+  },
+  "lower_back": {
+      "warmup": ["back extensions", "bird-dog"],
+      "mobility": ["cat-cow stretch", "child's pose"],
+      "strength": ["superman", "deadlift"]
+  },
+  "quadriceps": {
+      "warmup": ["bodyweight squats", "lunges"],
+      "mobility": ["lunging hip flexor stretch", "standing quad stretch"],
+      "strength": ["squats", "leg press", "lunges"]
   }
-  
+}
