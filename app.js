@@ -1,6 +1,6 @@
 async function fetchExercises() {
     const resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = ""; // Tøm tidligere resultater
+    resultsDiv.innerHTML = "";
 
     const selectedMuscles = Array.from(document.querySelectorAll('input[name="muscle"]:checked')).map(el => el.value);
     if (selectedMuscles.length === 0) {
@@ -24,4 +24,15 @@ function displayExercises(muscle, exercises) {
     const muscleDiv = document.createElement("div");
     muscleDiv.innerHTML = `<h3>${muscle}</h3><ul>${exercises.map(ex => `<li>${ex}</li>`).join('')}</ul>`;
     resultsDiv.appendChild(muscleDiv);
+}
+
+function showNextQuestion(selectedOption) {
+    document.querySelectorAll('.question').forEach(function (element) {
+        element.classList.add('hidden');
+    });
+
+    if (selectedOption === 'pain') {
+        document.getElementById('painQuestion').classList.remove('hidden');
+    }
+
 }
