@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Muscle Guide</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Velg muskelgrupper</h1>
+    <h1>Muscle Guide</h1>
     <form id="muscleForm">
         <label><input type="checkbox" name="muscle" value="hamstrings"> Hamstrings</label><br>
         <label><input type="checkbox" name="muscle" value="lower_back"> Lower Back</label><br>
         <label><input type="checkbox" name="muscle" value="quadriceps"> Quadriceps</label><br>
         <button type="button" onclick="fetchExercises()">Hent øvelser</button>
     </form>
+
+    <div class="survey-container">
+        <h2>What are you looking for?</h2>
+        <div class="question" id="question1">
+            <button onclick="showNextQuestion('pain')">I have pain and want to relieve it</button>
+            <button onclick="showNextQuestion('specific')">I'm looking for exercises for a specific body part</button>
+            <button onclick="showNextQuestion('mobility')">I'm looking for mobility exercises</button>
+            <button onclick="showNextQuestion('strength')">I'm looking for strength training exercises</button>
+            <button onclick="showNextQuestion('warmup')">I'm looking for warm up exercises</button>
+        </div>
+        <div class="question hidden" id="painQuestion">
+            <h3>Where is the pain?</h3>
+            <button onclick="showNextQuestion('back')">Back</button>
+            <button onclick="showNextQuestion('legs')">Legs</button>
+            <button onclick="showNextQuestion('shoulders')">Shoulders</button>
+            <button onclick="showNextQuestion('arms')">Arms</button>
+        </div>
+    </div>
 
     <h2>Øvelsesforslag:</h2>
     <div id="results"></div>
